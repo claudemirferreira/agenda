@@ -12,11 +12,13 @@ import { AdminRoutingModule } from './admin-routing.module';
 import { LayoutComponent } from './layout/layout.component';
 import { TopNavComponent } from './layout/top-nav/top-nav.component';
 import { SideNavComponent } from './layout/side-nav/side-nav.component';
+import { UserRoutingModule } from '../user/user-routing.module';
 
 @NgModule({
   imports: [
     CommonModule,
     AdminRoutingModule,
+    UserRoutingModule,
     MatToolbarModule,
     MatButtonModule,
     MatSidenavModule,

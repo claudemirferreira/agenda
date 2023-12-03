@@ -49,4 +49,5 @@ export class TablesComponent implements OnInit, AfterViewInit {
       ? this.selection.clear()
       : this.dataSource.data.forEach(row => this.selection.select(row));
   }
+  
 }

@@ -1,4 +1,11 @@
+
 export const childRoutes = [
+  {
+    path: 'user',
+    loadChildren: () =>
+    import('../user/user.module').then(m => m.UserModule),
+    data: { icon: 'person', text: 'Usuários' }
+  },
   {
     path: 'dashboard',
     loadChildren: () =>
