@@ -14,7 +14,7 @@ export class UserService {
     let token = 'Bearer '+localStorage.getItem("authorization");
     
     console.log(token)
-    return this.http.get(`${environment.URL}/api/users`,
+    return this.http.get(`${environment.URL}api/users`,
       { headers: new HttpHeaders().set('Authorization', token) }
     );
   }

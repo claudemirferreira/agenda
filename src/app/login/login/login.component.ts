@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
 
     setTimeout(() => {
       this.autenticationService.login(this.authentication).subscribe((result:AnyObject) => {
-        console.log('this.shared.token='+result.jwtToken);
+        console.log(result);
         localStorage.setItem('isLoggedin', 'true');
         localStorage.setItem('authorization', result.jwtToken + '');
         localStorage.setItem('login', result.login + '');
