@@ -51,8 +51,8 @@
       <ng-container matColumnDef="acao">
         <th mat-header-cell *matHeaderCellDef>Ação</th>
         <td mat-cell *matCellDef="let element">
-          <button mat-raised-button (click)="delete(element)">
-            <mat-icon>delete_forever</mat-icon>senha
+          <button mat-raised-button (click)="openDialogPassword(element)">
+            <mat-icon>lock</mat-icon>
           </button>
         </td>
       </ng-container>

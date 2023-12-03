@@ -12,12 +12,14 @@ import { FormsModule } from '@angular/forms';
 import { UserRoutingModule } from './user-routing.module';
 import { UserListComponent } from './user-list/user-list.component';
 import { UserCreateComponent } from './user-create/user-create.component';
+import { UserPasswordComponent } from './user-password/user-password.component';
 
 
 @NgModule({
   declarations: [
     UserListComponent,
     UserCreateComponent,
+    UserPasswordComponent,
   ],
   imports: [
     CommonModule,
